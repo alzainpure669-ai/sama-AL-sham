@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AIU Student Transport — SAMA AL SHAM</title>
+  <meta name="description" content="Luxury student transport from AIU University operated by SAMA AL SHAM. Routes, timings, booking & contact." />
+<link rel="stylesheet" href="samaalsham.css">
+  <style>
+    </style>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top">
+        <div class="logoStack" aria-hidden="true">
+          <div class="logoBox"><img src="Screenshot 2026-02-13 162406.png" alt="AIU logo"></div>
+          <div class="logoBox"><img src="Screenshot 2026-02-13 144710.png" alt="SAMA AL SHAM logo"></div>
+        </div>
+        <div class="brandTitle">
+          <strong>AIU Student Transport</strong>
+          <span>Operated by SAMA AL SHAM</span>
+        </div>
+      </a>
+
+      <div class="links" aria-label="Sections">
+        <a href="#official-table">Schedule</a>
+       
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navRight">
+        <a class="btn btn-primary" href="#official-table">View Schedule</a>
+
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile" id="mobileMenu" aria-label="Mobile menu">
+      <div class="menuCard">
+        <a href="#official-table" class="mLink">Schedule</a>
+        <a href="#booking" class="mLink">Request</a>
+        <a href="#contact" class="mLink">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="hero">
+  <div class="wrap">
+    <div class="heroGrid">
+      <section class="glass heroLeft">
+        <div class="pill"><i></i> Luxury • Safe • On-time • AIU Students</div>
+        <h1>Premium rides from <span style="color:var(--aiu-blue)">AIU</span> to your destinations.</h1>
+        <p class="lead">
+          SAMA AL SHAM provides organized student transportation with clear timings, comfortable buses,
+          and professional coordination.
+        </p>
+
+        <div class="heroActions">
+          <a class="btn btn-primary" href="#official-table">View Official Schedule</a>
+          <a class="btn btn-dark" href="#contact">Contact Now</a>
+        </div>
+
+        <div class="highlights" aria-label="Highlights">
+          <div class="stat">
+            <strong><span data-count="24">24</span>/7</strong>
+            <span>support</span>
+          </div>
+          <div class="stat">
+            <strong><span data-count="40">100</span>+</strong>
+            <span>Stops & lines</span>
+          </div>
+          <div class="stat">
+            <strong><span data-count="100">100</span>%</strong>
+            <span>Clear timing</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="heroRight">
+        <div class="luxCard">
+          <h3>Designed for AIU students</h3>
+          <p>best rides for AIU students.</p>
+          <div class="badges">
+            <span class="badge"><b></b> safety</span>
+            <span class="badge"><b></b> clean</span>
+            <span class="badge"><b></b> comfortable</span>
+          </div>
+        </div>
+            <div id="reqToast" style="display:none;margin-top:10px;padding:10px 12px;border-radius:14px;border:1px solid rgba(15,33,62,.12);background:rgba(215,191,106,.18);font-weight:1000;"></div>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!-- =========================
+     OFFICIAL TABLE (ONLY)
+     ========================= -->
+<section id="official-table">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>جدول الأماكن والمواعيد الرسمي</h2>
+        <p>نفس الجدول الرسمي كما هو — مع تكبير، عرض كامل، وطباعة.</p>
+      </div>
+
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="routes-table.png" download>Download</a>
+      </div>
+    </div>
+
+    <div class="glass" style="padding:14px;">
+      <div class="tableViewer" id="tableViewer">
+        <img
+          src="routes-table.png"
+          alt="AIU routes and timings table"
+          class="tableImg"
+          id="tableImg"
+        />
+      </div>
+
+      <div style="margin-top:10px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <span class="hint">Tip: Use mouse wheel / pinch to zoom.</span>
+        <span class="pillMini">Official Schedule Table</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fullscreen Modal -->
+<div class="modalBackdrop" id="tableModal">
+  <div class="modal" style="width:min(1200px,100%);">
+    <div class="modalTop">
+      <strong>الجدول الرسمي — عرض كامل</strong>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="routes-table.png" download>Download</a>
+        <button class="btn btn-ghost" id="btnCloseTable" type="button">Close</button>
+      </div>
+    </div>
+
+    <div class="modalBody" style="padding:12px;">
+      <div class="tableViewer fullscreen">
+        <img src="routes-table.png" alt="Official table" class="tableImg" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <h2>Contact</h2>
+        <p>For AIU student transport coordination & schedule support.</p>
+      </div>
+    </div>
+
+    <div class="glass" style="padding:18px;">
+      <div class="grid2">
+        <div>
+          <div style="font-weight:1100;color:var(--navy);font-size:16px;margin-bottom:6px;">SAMA AL SHAM — Travel & Tourism</div>
+          <div style="font-weight:900;color:rgba(10,16,32,.72);font-size:13px;">
+            AIU student transport coordination & schedules.
+          </div>
+
+          <div style="margin-top:12px;display:grid;gap:10px;">
+            <div style="padding:12px;border-radius:16px;border:1px solid rgba(15,33,62,.10);background:rgba(255,255,255,.62);font-weight:950;">
+              Email: <span style="font-weight:1100;color:var(--navy)">samaalsham.aiu@gmail.com</span>
+            </div>
+            <div style="padding:12px;border-radius:16px;border:1px solid rgba(15,33,62,.10);background:rgba(255,255,255,.62);font-weight:950;">
+              Phone: <span style="font-weight:1100;color:var(--navy)">0945555485</span>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:12px;">
+            <a class="btn btn-primary" href="#official-table">View Schedule</a>
+            <a class="btn btn-ghost" href="mailto:samaalsham.aiu@gmail.com">Email</a>
+          </div>
+        </div>
+
+        <div class="luxCard" style="margin:0;">
+          <h3>Fast help</h3>
+          <p>Send your destination + time in the request form, and we will guide you to the correct bus line.</p>
+          <div class="badges">
+            <span class="badge"><b></b> Quick</span>
+            <span class="badge"><b></b> Clear</span>
+            <span class="badge"><b></b> Luxury UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:14px;">
+        <span class="hint">© <span id="year"></span> AIU Student Transport — SAMA AL SHAM</span>
+        <a class="btn btn-ghost" href="#top">Back to Top</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footGrid">
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
+          <div class="logoBox"><img src="Screenshot 2026-02-13 162406.png" alt=""></div>
+          <div class="logoBox"><img src="Screenshot 2026-02-13 144710.png" alt=""></div>
+          <div style="display:grid;line-height:1.1;">
+            <strong style="color:var(--navy);letter-spacing:.8px;text-transform:uppercase;font-weight:1100;">AIU Student Transport</strong>
+            <span style="font-size:12px;font-weight:950;color:rgba(10,16,32,.62);">Operated by SAMA AL SHAM</span>
+          </div>
+        </div>
+        <p>Luxury student commuting experience with clarity, comfort, and coordination.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#official-table">Schedule</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:samaalsham.aiu@gmail.com">samaalsham.aiu@gmail.com</a></p>
+        <p><a href="tel:0945555485">0945555485</a></p>
+        <p><a href="#official-table">Download schedule</a></p>
+      </div>
+    </div>
+
+    <div class="copy">
+      <span>Luxury palette inspired by AIU and SAMA AL SHAM logos.</span>
+      <span>Built for official schedule viewing.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
